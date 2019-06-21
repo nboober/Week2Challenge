@@ -86,14 +86,12 @@ public class Week2Challenge {
       This adjusts based on the ingCounter determined
       in the for loop
     */
-    public static void cost(int count, int ingred){
-        int counter = count;
-        int ingCounter = ingred;
-        System.out.println("\nBurrito " + counter + " costs: $" + (3 +(.50*ingCounter)) + "0");
+    private static void cost(int count, int ingred){
+        System.out.println("\nBurrito " + count + " costs: $" + (3 +(.50*ingred)) + "0");
     }
 
     //riceChoice Method
-    public static String riceChoice(){
+    private static String riceChoice(){
         //Rice array
         ArrayList<String> rice = new ArrayList<>();
         rice.add("white rice");
@@ -107,7 +105,7 @@ public class Week2Challenge {
     }
 
     //meatChoice Method
-    public static String meatChoice(){
+    private static String meatChoice(){
         //Meat array
         ArrayList<String> meat = new ArrayList<>();
         meat.add("chicken");
@@ -124,7 +122,7 @@ public class Week2Challenge {
     }
 
     //beanChoice Method
-    public static String beanChoice(){
+    private static String beanChoice(){
         //Beans array
         ArrayList<String> beans = new ArrayList<>();
         beans.add("pinto beans");
@@ -138,7 +136,7 @@ public class Week2Challenge {
     }
 
     //salsaChoice method
-    public static String salsaChoice(){
+    private static String salsaChoice(){
         //Salsa Array
         ArrayList<String> salsa = new ArrayList<>();
         salsa.add("mild salsa");
@@ -154,7 +152,7 @@ public class Week2Challenge {
     }
 
     //veggieChoice Method
-    public static String veggieChoice(){
+    private static String veggieChoice(){
         //Veggies Array
         ArrayList<String> veggies = new ArrayList<>();
         veggies.add("lettuce");
@@ -170,7 +168,7 @@ public class Week2Challenge {
     }
 
     //cheeseChoice Method
-    public static String cheeseChoice(){
+    private static String cheeseChoice(){
         //Cheese Array
         ArrayList<String> cheese = new ArrayList<>();
         cheese.add("cheese");
@@ -183,7 +181,7 @@ public class Week2Challenge {
     }
 
     //guacChoice Method
-    public static String guacChoice(){
+    private static String guacChoice(){
         //Guac Array
         ArrayList<String> guac = new ArrayList<>();
         guac.add("guac");
@@ -196,7 +194,7 @@ public class Week2Challenge {
     }
 
     //quesoChoice Method
-    public static String quesoChoice(){
+    private static String quesoChoice(){
         //Queso Array
         ArrayList<String> queso = new ArrayList<>();
         queso.add("queso");
@@ -209,7 +207,7 @@ public class Week2Challenge {
     }
 
     //sourCreamChoice Method
-    public static String sourCreamChoice(){
+    private static String sourCreamChoice(){
         //Sour Cream Array
         ArrayList<String> sourCream = new ArrayList<>();
         sourCream.add("sour cream");
