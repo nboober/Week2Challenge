@@ -12,107 +12,32 @@ public class Week2Challenge {
             //Burrito array
             ArrayList<String> burrito = new ArrayList<>();
 
-            //Rice Array
-            ArrayList<String> rice = new ArrayList<>();
-            rice.add("white rice");
-            rice.add("brown rice");
-            rice.add("no rice");
-            /*
-            Rice random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(rice.get((int) (Math.random()* rice.size())));
+            //Call riceChoice method. The returned value is added to the Burrito array
+            burrito.add(riceChoice());
 
-            //Meat array
-            ArrayList<String> meat = new ArrayList<>();
-            meat.add("chicken");
-            meat.add("steak");
-            meat.add("carnidas");
-            meat.add("chorizo");
-            meat.add("sofritas");
-            meat.add("no meat");
-            /*
-            Meat random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(meat.get((int) (Math.random()* meat.size())));
+            //Call meatChoice method. The returned value is added to the Burrito array
+            burrito.add(meatChoice());
 
-            //Beans array
-            ArrayList<String> beans = new ArrayList<>();
-            beans.add("pinto beans");
-            beans.add("black beans");
-            beans.add("no beans");
-            /*
-            Beans random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(beans.get((int) (Math.random()* beans.size())));
+            //Call beanChoice method. The returned value is added to the Burrito array
+            burrito.add(beanChoice());
 
-            //Salsa Array
-            ArrayList<String> salsa = new ArrayList<>();
-            salsa.add("mild salsa");
-            salsa.add("medium salsa");
-            salsa.add("hot salsa");
-            salsa.add("no salsa");
-            salsa.add("all salsa options");
-            /*
-            Salsa random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(salsa.get((int) (Math.random()* salsa.size())));
+            //Call salsaChoice method. The returned value is added to the Burrito array
+            burrito.add(salsaChoice());
 
-            //Veggies Array
-            ArrayList<String> veggies = new ArrayList<>();
-            veggies.add("lettuce");
-            veggies.add("fajita veggies");
-            veggies.add("diced tomato");
-            veggies.add("no veggies");
-            veggies.add("all veggie options");
-            /*
-            Veggie random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(veggies.get((int) (Math.random()* veggies.size())));
+            //Call veggieChoice method. The returned value is added to the Burrito array
+            burrito.add(veggieChoice());
 
-            //Cheese Array
-            ArrayList<String> cheese = new ArrayList<>();
-            cheese.add("cheese");
-            cheese.add("no cheese");
-            /*
-            Cheese random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(cheese.get((int) (Math.random()* cheese.size())));
+            //Call cheeseChoice method. The returned value is added to the Burrito array
+            burrito.add(cheeseChoice());
 
-            //Guac Array
-            ArrayList<String> guac = new ArrayList<>();
-            guac.add("guac");
-            guac.add("no guac");
-            /*
-            Guac random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(guac.get((int) (Math.random()* guac.size())));
+            //Call guacChoice method. The returned value is added to the Burrito array
+            burrito.add(guacChoice());
 
-            //Queso Array
-            ArrayList<String> queso = new ArrayList<>();
-            queso.add("queso");
-            queso.add("no queso");
-            /*
-            Queso random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(queso.get((int) (Math.random()* queso.size())));
+            //Call quesoChoice Method. The returned value is added to the Burrito array
+            burrito.add(quesoChoice());
 
-            //Sour Cream Array
-            ArrayList<String> sourCream = new ArrayList<>();
-            sourCream.add("sour cream");
-            sourCream.add("no sour cream");
-            /*
-            Sour Cream random number generator. Whatever index is chosen is added to the
-            Burrito array
-            */
-            burrito.add(sourCream.get((int) (Math.random()* sourCream.size())));
+            //Call sourCreamChoice Method. The returned value is added to the Burrito array
+            burrito.add(sourCreamChoice());
 
             //Loop runs through the Burrito array. Displaying the contents
             System.out.print("Burrito " + counter + ": ");
@@ -137,25 +62,163 @@ public class Week2Challenge {
                     System.out.print(burrito.get(i));
                 }
             }
-            /*Call cost method. Displays the price of the burrito.
-              This adjusts based on the ingCounter determined
-              in the previous for loop
-             */
+            //Call cost method.
             cost(counter, ingCounter);
+
+            //Empty println for spacing between burritos
             System.out.println();
-            //Burrito array contents is cleared before next loop
+
+            //Burrito array is cleared before next loop
             burrito.clear();
+
             //Reset ingCounter to zero before next loop
             ingCounter = 0;
+
             //Increment counter to keep track of total loops
             counter++;
+
         }while(counter <= 25);
 
     }
-    //cost Method
+    /*
+      cost Method
+      Displays the price of the burrito.
+      This adjusts based on the ingCounter determined
+      in the for loop
+    */
     public static void cost(int count, int ingred){
         int counter = count;
         int ingCounter = ingred;
         System.out.println("\nBurrito " + counter + " costs: $" + (3 +(.50*ingCounter)));
     }
+
+    //riceChoice Method
+    public static String riceChoice(){
+        //Rice array
+        ArrayList<String> rice = new ArrayList<>();
+        rice.add("white rice");
+        rice.add("brown rice");
+        rice.add("no rice");
+            /*
+            Rice random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return rice.get((int) (Math.random()* rice.size()));
+    }
+
+    //meatChoice Method
+    public static String meatChoice(){
+        //Meat array
+        ArrayList<String> meat = new ArrayList<>();
+        meat.add("chicken");
+        meat.add("steak");
+        meat.add("carnidas");
+        meat.add("chorizo");
+        meat.add("sofritas");
+        meat.add("no meat");
+            /*
+            Meat random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return meat.get((int) (Math.random()* meat.size()));
+    }
+
+    //beanChoice Method
+    public static String beanChoice(){
+        //Beans array
+        ArrayList<String> beans = new ArrayList<>();
+        beans.add("pinto beans");
+        beans.add("black beans");
+        beans.add("no beans");
+            /*
+            Beans random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return beans.get((int) (Math.random()* beans.size()));
+    }
+
+    //salsaChoice method
+    public static String salsaChoice(){
+        //Salsa Array
+        ArrayList<String> salsa = new ArrayList<>();
+        salsa.add("mild salsa");
+        salsa.add("medium salsa");
+        salsa.add("hot salsa");
+        salsa.add("no salsa");
+        salsa.add("all salsa options");
+            /*
+            Salsa random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return salsa.get((int) (Math.random()* salsa.size()));
+    }
+
+    //veggieChoice Method
+    public static String veggieChoice(){
+        //Veggies Array
+        ArrayList<String> veggies = new ArrayList<>();
+        veggies.add("lettuce");
+        veggies.add("fajita veggies");
+        veggies.add("diced tomato");
+        veggies.add("no veggies");
+        veggies.add("all veggie options");
+            /*
+            Veggie random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return veggies.get((int) (Math.random()* veggies.size()));
+    }
+
+    //cheeseChoice Method
+    public static String cheeseChoice(){
+        //Cheese Array
+        ArrayList<String> cheese = new ArrayList<>();
+        cheese.add("cheese");
+        cheese.add("no cheese");
+            /*
+            Cheese random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return cheese.get((int) (Math.random()* cheese.size()));
+    }
+
+    //guacChoice Method
+    public static String guacChoice(){
+        //Guac Array
+        ArrayList<String> guac = new ArrayList<>();
+        guac.add("guac");
+        guac.add("no guac");
+            /*
+            Guac random number generator.
+            Whatever index is chosen the value is returned
+            */
+         return guac.get((int) (Math.random()* guac.size()));
+    }
+
+    //quesoChoice Method
+    public static String quesoChoice(){
+        //Queso Array
+        ArrayList<String> queso = new ArrayList<>();
+        queso.add("queso");
+        queso.add("no queso");
+            /*
+            Queso random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return queso.get((int) (Math.random()* queso.size()));
+    }
+
+    //sourCreamChoice Method
+    public static String sourCreamChoice(){
+        //Sour Cream Array
+        ArrayList<String> sourCream = new ArrayList<>();
+        sourCream.add("sour cream");
+        sourCream.add("no sour cream");
+            /*
+            Sour Cream random number generator.
+            Whatever index is chosen the value is returned
+            */
+        return sourCream.get((int) (Math.random()* sourCream.size()));
+    }
+
 }
