@@ -137,11 +137,11 @@ public class Week2Challenge {
                     System.out.print(burrito.get(i));
                 }
             }
-            /*Displays the price of the burrito.
+            /*Call cost method. Displays the price of the burrito.
               This adjusts based on the ingCounter determined
               in the previous for loop
              */
-            System.out.println("\nBurrito " + counter + " costs: $" + (3 +(.50*ingCounter)));
+            cost(counter, ingCounter);
             System.out.println();
             //Burrito array contents is cleared before next loop
             burrito.clear();
@@ -151,5 +151,11 @@ public class Week2Challenge {
             counter++;
         }while(counter <= 25);
 
+    }
+    //cost Method
+    public static void cost(int count, int ingred){
+        int counter = count;
+        int ingCounter = ingred;
+        System.out.println("\nBurrito " + counter + " costs: $" + (3 +(.50*ingCounter)));
     }
 }
