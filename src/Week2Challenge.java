@@ -72,8 +72,8 @@ public class Week2Challenge {
                     ingCounter++;
                 }
 
-                if(i < 8){
-                    System.out.print(burrito.get(i) + ",");
+                if(i < (burrito.size()-1)){
+                    System.out.print(burrito.get(i) + ", ");
 
                 }else{
                     System.out.print(burrito.get(i));
