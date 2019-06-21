@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6377be4-53ea-4b85-8720-26fa5a3abb3f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Week2Challenge/Week2Challenge.class" afterPath="$PROJECT_DIR$/out/production/Week2Challenge/Week2Challenge.class" />
       <change beforePath="$PROJECT_DIR$/src/Week2Challenge.java" afterPath="$PROJECT_DIR$/src/Week2Challenge.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="Week2Challenge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Week2Challenge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="91" lean-forward="false" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
+            <state relative-caret-position="323">
+              <caret line="91" column="92" lean-forward="false" selection-start-line="91" selection-start-column="92" selection-end-line="91" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -223,12 +222,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561122506135</updated>
-      <workItem from="1561122510890" duration="13049000" />
+      <workItem from="1561122510890" duration="13246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13049000" />
+    <option name="totallyTimeSpent" value="13246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -276,8 +275,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Week2Challenge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="91" lean-forward="false" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
+        <state relative-caret-position="323">
+          <caret line="91" column="92" lean-forward="false" selection-start-line="91" selection-start-column="92" selection-end-line="91" selection-end-column="92" />
           <folding />
         </state>
       </provider>

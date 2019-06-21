@@ -89,7 +89,7 @@ public class Week2Challenge {
     public static void cost(int count, int ingred){
         int counter = count;
         int ingCounter = ingred;
-        System.out.println("\nBurrito " + counter + " costs: $" + (3 +(.50*ingCounter)));
+        System.out.println("\nBurrito " + counter + " costs: $" + (3 +(.50*ingCounter)) + "0");
     }
 
     //riceChoice Method
