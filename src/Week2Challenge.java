@@ -9,8 +9,8 @@ public class Week2Challenge {
             ArrayList<String> burrito = new ArrayList<>();
 
             ArrayList<String> rice = new ArrayList<>();
-            rice.add("white");
-            rice.add("brown");
+            rice.add("white rice");
+            rice.add("brown rice");
             rice.add("no rice");
             burrito.add(rice.get((int) (Math.random()* rice.size())));
 
@@ -24,8 +24,8 @@ public class Week2Challenge {
             burrito.add(meat.get((int) (Math.random()* meat.size())));
 
             ArrayList<String> beans = new ArrayList<>();
-            beans.add("pinto");
-            beans.add("black");
+            beans.add("pinto beans");
+            beans.add("black beans");
             beans.add("no beans");
             burrito.add(beans.get((int) (Math.random()* beans.size())));
 
@@ -65,7 +65,16 @@ public class Week2Challenge {
             burrito.add(sourCream.get((int) (Math.random()* sourCream.size())));
 
 
-            System.out.println("Burrito " + counter + ": " + burrito);
+            System.out.print("Burrito " + counter + ": ");
+            for(int i = 0; i < burrito.size(); i++){
+                if(i < 8){
+                    System.out.print(burrito.get(i) + ",");
+
+                }else{
+                    System.out.print(burrito.get(i));
+                }
+            }
+            System.out.println();
             burrito.clear();
             counter++;
         }while(counter <= 25);
