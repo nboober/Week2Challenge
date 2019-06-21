@@ -41,6 +41,7 @@ public class Week2Challenge {
             ArrayList<String> veggies = new ArrayList<>();
             veggies.add("lettuce");
             veggies.add("fajita veggies");
+            veggies.add("diced tomato");
             veggies.add("no veggies");
             veggies.add("all veggie options");
             burrito.add(veggies.get((int) (Math.random()* veggies.size())));
@@ -68,7 +69,10 @@ public class Week2Challenge {
 
             System.out.print("Burrito " + counter + ": ");
             for(int i = 0; i < burrito.size(); i++){
-                if(!burrito.get(i).contains("no")){
+
+                if(burrito.get(i).contains("all")){
+                    ingCounter += 3;
+                }else if(!burrito.get(i).contains("no")){
                     ingCounter++;
                 }
 
