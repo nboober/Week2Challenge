@@ -4,6 +4,7 @@ public class Week2Challenge {
     public static void main(String[] args){
 
         int counter = 1;
+        int ingCounter = 0;
 
         do {
             ArrayList<String> burrito = new ArrayList<>();
@@ -67,6 +68,10 @@ public class Week2Challenge {
 
             System.out.print("Burrito " + counter + ": ");
             for(int i = 0; i < burrito.size(); i++){
+                if(!burrito.get(i).contains("no")){
+                    ingCounter++;
+                }
+
                 if(i < 8){
                     System.out.print(burrito.get(i) + ",");
 
@@ -74,8 +79,10 @@ public class Week2Challenge {
                     System.out.print(burrito.get(i));
                 }
             }
+            System.out.println("\nBurrito " + counter + " costs: $" + (3 +(.50*ingCounter)));
             System.out.println();
             burrito.clear();
+            ingCounter = 0;
             counter++;
         }while(counter <= 25);
 
